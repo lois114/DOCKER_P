@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\lois1\\\\Desktop\\\\DEV\\\\DOCKER\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(pip install *)",
+      "Bash(pytest tests/ -v)",
+      "Bash(docker build *)",
+      "Bash(curl -s http://localhost:5000/health)",
+      "Bash(curl -s http://localhost:5000/api/data)",
+      "Bash(curl -s http://localhost:5000/metrics)",
+      "Bash(docker stop *)",
+      "Bash(docker rm *)",
+      "Bash(docker compose *)",
+      "Bash(curl -s \"http://localhost:9090/api/v1/targets\")",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); targets=data['data']['activeTargets']; [print\\(t['labels']['job'], '->', t['health']\\) for t in targets]\")"
+    ]
+  }
+}
